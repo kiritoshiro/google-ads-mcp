@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "google-ad-grants-manager",
+  "version": "0.2.0",
+  "description": "Analyze a Google Ad Grants account and make explicitly confirmed campaign changes through a private MCP server.",
+  "license": "MIT",
+  "repository": "https://github.com/kiritoshiro/google-ads-mcp",
+  "keywords": ["google-ads", "ad-grants", "nonprofit", "marketing", "mcp"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Google Ad Grants Manager",
+        "shortDescription": "Analyze and safely manage Google Ad Grants",
+        "longDescription": "Review campaigns, search terms, landing pages and conversions, then make explicitly confirmed changes such as pausing campaigns or adding negative keywords.",
+        "developerName": "Private / self-hosted",
+        "category": "Productivity",
+        "capabilities": ["Read", "Write"],
+        "defaultPrompt": [
+          "Review my Google Ad Grants account for the last 30 days and identify wasted traffic.",
+          "Show search terms that may need negative keywords, but do not change anything yet.",
+          "Check whether my conversion actions are suitable for Ad Grants optimization."
+        ]
+      }
+    }
+  }
+}

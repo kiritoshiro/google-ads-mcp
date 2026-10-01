@@ -1,0 +1,19 @@
+{
+  "name": "google-ad-grants-mcp",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Private MCP server for analyzing and safely managing a Google Ad Grants account from ChatGPT/Codex.",
+  "engines": {
+    "node": ">=20.6.0"
+  },
+  "scripts": {
+    "start": "node --env-file=.env server.js",
+    "check": "node --check server.js && node --check src/google-ads.js && node --check scripts/get-refresh-token.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.20.2",
+    "zod": "^3.25.76"
+  }
+}
