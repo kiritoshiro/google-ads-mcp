@@ -10,7 +10,7 @@ Writes: `set_campaign_status` and `add_campaign_negative_keywords`. Both require
 
 ## Requirements
 
-- Node.js 20 or newer (tested with Node 24).
+- Node.js 20.6 or newer (tested with Node 24).
 - A Google Cloud project with Google Ads API enabled and an approved API access level for the intended account.
 - A Google OAuth desktop client in that project, and a Google user with access to the Ads account.
 
